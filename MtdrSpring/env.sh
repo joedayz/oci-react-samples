@@ -27,12 +27,12 @@ echo "MTDRWORKSHOP_LOCATION: $MTDRWORKSHOP_LOCATION"
 # Java Home
 # -d true if file is a directory, so it's testing if this directory exists, if it does
 # we are on Mac doing local dev
-if test -d ~/graalvm-ce-java11-20.1.0/Contents/Home/bin; then
+if test -d ~/graalvm-ce-java17-22.3.3/Contents/Home/bin; then
   # We are on Mac doing local dev
-  export JAVA_HOME=~/graalvm-ce-java11-20.1.0/Contents/Home;
+  export JAVA_HOME=~/graalvm-ce-java17-22.3.3/Contents/Home;
 else
   # Assume linux
-  export JAVA_HOME=~/graalvm-ce-java11-20.1.0
+  export JAVA_HOME=~/graalvm-ce-java17-22.3.3
 fi
 export PATH=$JAVA_HOME/bin:$PATH
 
