@@ -1,0 +1,167 @@
+/**
+ * Copyright (c) 2024 Oracle and/or its affiliates.
+
+ * The Universal Permissive License (UPL), Version 1.0
+
+ * Subject to the condition set forth below, permission is hereby granted to any
+ * person obtaining a copy of this software, associated documentation and/or data
+ * (collectively the "Software"), free of charge and under any and all copyright
+ * rights in the Software, and any and all patent rights owned or freely
+ * licensable by each licensor hereunder covering either (i) the unmodified
+ * Software as contributed to or provided by such licensor, or (ii) the Larger
+ * Works (as defined below), to deal in both
+
+ * (a) the Software, and
+ * (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
+ * one is included with the Software (each a "Larger Work" to which the Software
+ * is contributed by such licensors),
+
+ * without restriction, including without limitation the rights to copy, create
+ * derivative works of, display, perform, and distribute the Software and make,
+ * use, sell, offer for sale, import, export, have made, and have sold the
+ * Software and the Larger Work(s), and to sublicense the foregoing rights on
+ * either these or other terms.
+
+ * This license is subject to the following condition:
+ * The above copyright notice and either this complete permission notice or at
+ * a minimum a reference to the UPL must be included in all copies or
+ * substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+
+ */
+
+body {
+    /* from the redwood theme */
+    background-color: #3A3632;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .App {
+    background: #201E1C;
+    color: #FEF9F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: max(12px,min(2vw, 18px)); /*calc(1vw + 1vmin);*/
+    margin: 2rem 0 4rem 0;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 4.5rem 8rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  div#maincontent, div#newinputform form {
+    width: 95%;
+  }
+  div#maincontent {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0;
+  }
+  h2 {
+    margin: 0.1rem 0 0.1rem 0;
+    padding: 0;
+  }
+  #newiteminput {
+    width: 100%;
+  }
+  div#newinputform {
+    width: 100%;
+  }
+  div#newinputform form{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  #donelist {
+    margin: 0;
+    padding: 0;
+  }
+  table#itemlistNotDone {
+    margin-bottom: 2rem;
+  }
+  table#itemlistDone {
+    margin-bottom: 3rem;
+  }
+  table.itemlist {
+    margin-top: 0.7rem;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  table.itemlist td {
+    border-bottom: solid 1px #5B5652;
+    padding: .5rem;
+  }
+  table.itemlist td.description {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  table.itemlist td.date {
+    font-size: max(10px,min(1.5vw, 14px));
+    color: grey;
+    white-space: nowrap;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  table.itemlist tr:hover {
+    background-color: #161513;
+  }
+  input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  input[type="text"] {
+    border-radius: 0.3rem;
+    padding-left: 10px;
+  }
+  button.AddButton,
+  button.DeleteButton,
+  button.AddButton,
+  button.DoneButton {
+    font-size: max(8px,min(2vw, 12px));
+    padding: 0.35em 0.5em;
+    color:#161513;
+  }
+  /* from the redwood theme */
+  button.AddButton {
+    color: #FEF9F2;
+    background-color: #5F7D4F;
+  }
+  button.AddButton:hover {
+    background-color: #6F915D;
+  }
+  button.DeleteButton {
+    color: #FEF9F2;
+    background-color:  #D63B25;
+  }
+  button.DeleteButton:hover {
+    background-color: #EC4F3A
+  }
+  button.DoneButton {
+    background-color: #FBF9F8;
+  }
+  button.DoneButton:hover {
+    background-color: #D4CFCA;
+  }
